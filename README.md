@@ -1,4 +1,12 @@
 # projetosM4_locadoraFilmes
 
-Tenho estado ausente por um tempo, pois tenho dedicado minhas semanas ao aprendizado do desenvolvimento de backend e à criação de APIs cada vez mais otimizadas. Afinal, o que seria do front-end sem o backend, não é mesmo? Entender o funcionamento dos bastidores é fundamental para construir um muro sólido e resistente.
-A tarefa que gostaria de compartilhar com vocês é a criação de um MVP (Produto Mínimo Viável) de uma API que gerencia usuários e os cursos aos quais esses usuários estão matriculados. Além disso, essa API também possui um sistema de controle de acesso, onde alguns recursos estão disponíveis apenas para usuários que fizeram login na aplicação, e outros recursos são reservados para usuários que fizeram login e têm permissões de administrador.
+Neste projeto a tarefa foi desenvolver uma API de um serviço de locação de filmes.
+Esta API é altamente funcional e oferece recursos essenciais, incluindo a capacidade de registrar novos filmes, listar todos os filmes cadastrados, atualizar detalhes de um filme com base em seu ID e remover filmes do sistema com facilidade, utilizando o ID correspondente.
+Para a rota GET/movies foi criado um middleware de paginação.
+Tecnologias: TypeScript, TypeORM, Express, PostgresSQL, serialização de dados utilizando a biblioteca Zod.
+
+Método	 Endpoint	      Responsabilidade
+POST  	 /movies	      Cadastra um novo filme
+GET	     /movies        Lista todos os filmes cadastrados
+PATCH	   /movies/:id 	  Atualiza o filme passado por id
+DELETE   /movies/:id 	  Deleta o filme passado por id
