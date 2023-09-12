@@ -6,9 +6,9 @@ Para a rota GET/movies foi criado um middleware de paginação. O avanço neste 
 Tecnologias: TypeScript, TypeORM, Express, PostgresSQL, serialização de dados utilizando a biblioteca Zod.
 
 Método	 Endpoint	      Responsabilidade
-POST  	 /movies	      Cadastra um novo filme
-GET	     /movies        Lista todos os filmes cadastrados
-PATCH	   /movies/:id 	  Atualiza o filme passado por id
+POST  	 /movies	      Cadastra um novo filme,
+GET	     /movies        Lista todos os filmes cadastrados,
+PATCH	   /movies/:id 	  Atualiza o filme passado por id,
 DELETE   /movies/:id 	  Deleta o filme passado por id
 
 Casos de Erro:
